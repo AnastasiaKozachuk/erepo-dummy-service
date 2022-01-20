@@ -1,0 +1,19 @@
+server:
+  port: 8090
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+spring:
+  cache:
+    type: redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+eureka:
+  client:
+    enabled: false
